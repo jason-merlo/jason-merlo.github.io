@@ -4,6 +4,31 @@
 
 // Typography
 
+* {
+  font-family: $default-font;
+  font-weight: 500;
+}
+
+.navbar-brand,
+h1,
+h2 {
+  font-family: $title-font;
+  font-weight: 500;
+  // font-size: 1.75rem;
+}
+
+h2 {
+  a {
+    font-family: $title-font;
+    font-weight: 500;
+  }
+}
+
+h1.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 p,
 h1,
 h2,
@@ -24,6 +49,7 @@ hr {
 }
 
 table {
+
   td,
   th {
     font-size: 1rem;
@@ -31,6 +57,7 @@ table {
 
   th {
     font-weight: bold;
+    width: 150px;
   }
 }
 
@@ -64,6 +91,18 @@ blockquote {
   padding: 0.5em 10px;
   font-size: 1.2rem;
 }
+
+// News
+
+.news table th {
+  font-weight: 500;
+  width: 100px;
+}
+
+.news table td {
+  font-weight: 300;
+}
+
 
 // Math
 
@@ -130,16 +169,17 @@ blockquote {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 400px) {
   .profile {
     width: 30%;
+    max-width: 22.5%;
 
     .address {
       p {
@@ -167,10 +207,12 @@ blockquote {
 // Navbar customization
 
 .navbar {
+  font-size: 1.25rem;
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  // border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+
 }
 
 .navbar .dropdown-menu {
@@ -206,8 +248,12 @@ blockquote {
     }
   }
 
+  h1,
+  .navbar-brand.title,
   .navbar-brand {
-    color: var(--global-text-color);
+    // color: var(--global-text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -231,12 +277,19 @@ blockquote {
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
-    font-size: 1.7rem;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 2.0rem;
 
     a {
       i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
+        color: $grey-color-dark;
+
+        -webkit-transition: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: all 0.2s ease;
       }
 
       &:hover {
@@ -309,8 +362,13 @@ blockquote {
 
     a {
       i::before {
-        color: var(--global-text-color);
+        color: var($grey-color-dark);
         transition-property: all 0.2s ease-in-out;
+        -webkit-transition: 0.35s ease;
+        -moz-transition: 0.35s ease;
+        -ms-transition: 0.35s ease;
+        -o-transition: 0.35s ease;
+        transition: all 0.35s ease;
       }
 
       &:hover {
@@ -665,6 +723,7 @@ footer.sticky-bottom {
 
       .badges {
         padding-bottom: 0.5rem;
+
         span {
           display: inline-block;
           color: $black-color;
@@ -683,11 +742,11 @@ footer.sticky-bottom {
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        transition-property: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: all 0.2s ease;
 
         p {
           line-height: 1.4em;
@@ -703,11 +762,11 @@ footer.sticky-bottom {
 
       .hidden.open {
         max-height: 100em;
-        transition-property: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -ms-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: all 0.15s ease;
+        transition-property: 0.2s ease;
+        -moz-transition: 0.2s ease;
+        -ms-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
+        transition: all 0.2s ease;
       }
 
       div.abstract.hidden {
@@ -911,7 +970,8 @@ progress::-moz-progress-bar {
     }
   }
 
-  .dropdown-item.active, .dropdown-item:active {
+  .dropdown-item.active,
+  .dropdown-item:active {
     background-color: var(--global-hover-color);
     color: var(--global-hover-text-color) !important;
 
@@ -953,6 +1013,7 @@ nav[data-toggle="toc"] {
 
 /* small screens */
 @media (max-width: 576px) {
+
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
     visibility: hidden;
@@ -971,7 +1032,12 @@ nav[data-toggle="toc"] {
       color: var(--global-tip-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-tip-block-title);
     }
   }
@@ -984,7 +1050,12 @@ nav[data-toggle="toc"] {
       color: var(--global-warning-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-warning-block-title);
     }
   }
@@ -997,7 +1068,12 @@ nav[data-toggle="toc"] {
       color: var(--global-danger-block-text);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-danger-block-title);
     }
   }

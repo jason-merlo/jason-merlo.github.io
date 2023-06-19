@@ -1,14 +1,21 @@
-Nanzer:
-    url: http://www.jeffreynanzer.org/
-Vakalis:
-    url: https://stavrosvakalis.org
-Mghabghab:
-    url: https://scholar.google.com/citations?user=h6LzPBAAAAAJ&hl=en&oi=ao
-Schlegel:
-    url: https://scholar.google.com/citations?user=C_1JTKkAAAAJ&hl=en&oi=ao
-Mukherjee:
-    url: https://sites.google.com/view/saptarshimukherjee40/
-Mukerjee:
-    url: https://sites.google.com/view/saptarshimukherjee40/
-Radha:
-    url: https://www.egr.msu.edu/waves/people/Radha.html
+"Nanzer":
+    - firstname: ["Jeffrey", "J. A.", "Jeffrey A."]
+      url: http://www.jeffreynanzer.org/
+"Vakalis":
+    - firstname: ["Stavros"]
+      url: https://www.stavrosvakalis.org
+"Mghabghab":
+    - firstname: ["Serge", "Serge R.", "S. R."]
+      url: https://scholar.google.com/citations?user=h6LzPBAAAAAJ&hl=en&oi=ao
+"Schlegel":
+    - firstname: ["Anton"]
+      url: https://scholar.google.com/citations?user=C_1JTKkAAAAJ&hl=en&oi=ao
+"Mukherjee":
+    - firstname: ["Saptarshi"]
+      url: https://sites.google.com/view/saptarshimukherjee40/
+"Mukerjee":
+    - firstname: ["Saptarshi"]
+      url: https://sites.google.com/view/saptarshimukherjee40/
+"Radha":
+    - firstname: ["Hayder"]
+      url: https://www.egr.msu.edu/waves/people/radha.html
