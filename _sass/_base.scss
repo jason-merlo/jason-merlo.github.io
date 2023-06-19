@@ -657,6 +657,7 @@ footer.sticky-bottom {
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
+        min-width: 150px;
 
         abbr {
           display: inline-block;
@@ -676,6 +677,11 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+
+          @media (max-width: 574px) {
+            margin-left: 10px;
+          }
+
         }
       }
 
@@ -1018,7 +1024,7 @@ nav[data-toggle="toc"] {
 }
 
 /* small screens */
-@media (max-width: 576px) {
+@media (max-width: 622px) {
 
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
