@@ -15,7 +15,8 @@ footer_text: >
 keywords: radars, radar systems, automotive radar, automated driving, fmcw drone detection
 
 lang: en
-icon: ⚛️  
+icon: favicon.png
+# icon: JM  
 
 url:
 baseurl:
