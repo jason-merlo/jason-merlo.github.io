@@ -6,6 +6,28 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
+@inproceedings{merlo2023aps,
+	award = {SPC Honorable Mention},
+	abbr = {IEEE AP-S/URSI},
+	selected = {true},
+	abstract = {We present a two node wideband wireless distributed antenna array operating from 3.1–3.3 GHz on software-deﬁned radios (SDRs). To synthesize the total bandwidth of 300 MHz, a 100 MHz bandwidth signal was used over multiple frequency steps, with the carrier frequency re-tuned between each pulse. The nodes were wirelessly synchronized using a high-accuracy two-way time transfer technique which was also used to determine the inter-node range for beamforming. A total beamforming bias ± standard deviation of 62.46 ± 45.74 ps and 0.27 ± 2.28°at the target beamforming angle at a range of 35.5 m was achieved.},
+	author = {Jason M. {Merlo} and Jeffrey A. {Nanzer}},
+	booktitle = {IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting},
+	month = {July},
+	pdf = {aps23_distributed_wideband_beamforming.pdf},
+	slides = {TU-A1.1A.9.Jason.FINAL.pdf},
+	title = {Wireless Time and Phase Alignment for Wideband Beamforming in Distributed Phased Arrays},
+	year = {2023}}
+
+@inproceedings{shandi2023aps,
+	abbr = {IEEE AP-S/URSI},
+	abstract = {Distributed antenna arrays can provide unique capabilities in applications such as distributed communication and sensing. However, in order to coordinate distributed arrays, accurate positioning information of all nodes in the array is required to ensure coherent operations at the target location. Other works have shown that two-way time transfer using spectrally sparse two-tone ranging waveforms provides high accuracy timing synchronization. In addition to time correction, these waveforms may provide inter-node ranging with high accuracy. In this paper the accuracy of ranging via two-way time transfer for a two-node time synchronization system using a two-tone waveform is evaluated. Results are compared to ranging performance using a standard linear frequency modulated waveform (LFM). Experimental results show an accuracy of 0.5 mm using a 40 MHz bandwidth two-tone waveform with a 36 dB signal-tonoise ratio (SNR), supporting a beamforming frequency of up to 40 GHz.},
+	author = {Naim {Shandi} and Jason M. {Merlo} and Jeffrey A. {Nanzer}},
+	booktitle = {IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting},
+	month = {July},
+	title = {Sub-Millimeter Ranging Accuracy for Distributed Antenna Arrays Using Two-Way Time Transfer},
+	year = {2023}}
+
 @article{schlegel2023coherent,
   abbr={IEEE MWTL},
   abstract={We present a distributed microwave radar system operating at 4.8 GHz that uses wireless frequency transfer and internode ranging. We implement wireless frequency alignment (syntonization) using a sparse two-tone signal transmitted from the primary node and a self-mixing receiver on the secondary node. The primary node acts as a distributed radar transmitter, sending a linear frequency-modulated (LFM) waveform downrange, toward the target. There is also a repeater that retransmits an LFM from the secondary node that is used to estimate the separation of the node to correct for the phase rotation of the frequency signal due to propagation. The secondary node also locks its oscillator to the primary node and captures the signal reflected from the scene. We demonstrate the ability of the fully wireless distributed radar system to perform bistatic ranging in an outdoor environment at 4.8 GHz using software-defined radios (SDRs). Measurements to a wall yielded a maximum standard deviation of 1.7 cm and a maximum bias of 14.9 cm.},
@@ -164,6 +186,7 @@
 
 @article{merlo2021dimensional,
 	abbr = {IEEE T-MTT},
+	selected = {true},
 	abstract = {In this work, a method for directly measuring target velocity in three dimensions using a dual axis correlation interferometric radar is presented. Recent advances have shown that the measurement of a target's angular velocity is possible by correlating the signals measured at spatially diverse aperture locations. By utilizing multiple orthogonal baselines and using conventional Doppler velocity methods to obtain radial velocity, a full three-dimensional velocity vector can be obtained using only three receive antennas and a single transmitter, without the need for tracking. A 41.8 GHz dual axis interferometric radar with a 7.26λ antenna baseline is presented along with measurements of a target moving parallel to the plane of the radar array, and of a target moving with components of both radial and tangential velocity. These experiments achieved total velocity root-mean-square errors of 41.01 mm/s (10.5%) for a target moving along a plane parallel to the array, and 45.07 mm/s (13.5%) for a target moving with components of radial and tangential motion relative to the array; estimated trajectory angle RMSEs of 10.42$\,^{\circ}$ and 5.11$\,^{\circ}$ were achieved for each experiment respectively.},
 	archiveprefix = {arXiv},
 	arxiv = {2011.05512},
@@ -264,4 +287,3 @@
 	pages = {583-584},
 	title = {A Microwave Tomography System Using Time-Reversal Imaging},
 	year = {2019}}
->>>>>>> 4ae0008 (Initial commit)
