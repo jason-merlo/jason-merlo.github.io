@@ -13,7 +13,7 @@ cv_pdf: "graduate_cv_2023_p.pdf"
  	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
  		var adobeDCView = new AdobeDC.View({clientId: "73b0af45e3314cc6a2052f0b32416f04", divId: "adobe-dc-view"});
  		adobeDCView.previewFile({
- 			content:{location: {url: "https://merlo.io/assets/pdf/Graduate CV - 2023 - P.pdf"}},
+ 			content:{location: {url: "https://merlo.io/assets/pdf/cv.pdf"}},
  			metaData:{fileName: "graduate_cv_2023_p.pdf"}
  		}, {embedMode: "IN_LINE"});
  	});
