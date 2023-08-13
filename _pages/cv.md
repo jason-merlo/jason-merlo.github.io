@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 4
-cv_pdf: "graduate_cv_2023_p.pdf"
+cv_pdf: "cv.pdf"
 ---
 
  <div id="adobe-dc-view" style="width: 800px;"></div>
