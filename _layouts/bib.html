@@ -157,6 +157,9 @@
       {% if entry.ieee %}
       <a href="{{ entry.ieee }}" class="btn btn-sm z-depth-0" role="button">IEEE Xplore</a>
       {% endif %}
+      {% if entry.video %}
+      <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
+      {% endif %}
       {%- if entry.pdf %}
       {% if entry.pdf contains '://' -%}
       <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
