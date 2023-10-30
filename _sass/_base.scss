@@ -667,10 +667,11 @@ footer.sticky-bottom {
 
           a {
             color: white;
+            font-weight: bold;
 
-            &:hover {
-              text-decoration: none;
-            }
+            // &:hover {
+            //   text-decoration: none;
+            // }
           }
         }
 
