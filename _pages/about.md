@@ -1,25 +1,27 @@
 ---
 layout: about
 title: About
-permalink: /
-# description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+permalink: /about
+nav: true
 
 profile:
   align: right
   image: prof_pic.jpg
-#  address: >
-#    <p>555 your office number</p>
-#    <p>123 your address street</p>
-#    <p>Your City, State 12345</p>
 
-news: true
-social: false
-selected_papers: true
-latest_posts: false
 ---
 
-I am a Ph.D. student in the Distributed Electromagnetic Theory and Application (DELTA) sub-group of the Electromagnetics Research Group ([EMRG](https://www.egr.msu.edu/emrg/)) at Michigan State University advised by [Prof. Jeffrey Nanzer](http://www.jeffreynanzer.org/).  My current research interests include distributed interferometric arrays, radar detection and tracking, and radar applied to robotics applications.
+Jason received the B.S. degree in computer engineering from Michigan State University, East Lansing, MI, USA in 2018, where he is currently a Ph.D. candidate in electrical engineering. From 2017-2021 he was project manager and electrical systems team lead of the Michigan State University AutoDrive Challenge team. His current research interests include software-defined radios, distributed radar and wireless system synchronization, interferometric arrays, synthetic aperture radar, joint radar-communications, and automotive radar applications. He currently maintains two Python/C++ software packages used in-house for software-defined radio, radar, and distributed array coordination simulation and real-time signal processing.
 
-Previously, I received a B.S. in Electrical Engineering at Michigan State University where I co-founded the Student Organized Autonomy Research group ([SOAR](https://canvas.msu.edu/soar)) with the aim of enabling undergraduate and graduate students to become involved in autonomy research.
+Jason was the recipient of a 2023 IEEE MTT-S Graduate Fellowship and a 2023 URSI Young Scientist Award. He won first place in the Student Paper Competition at the 2023 IEEE International Microwave Symposium and won Honorable Mention in the Student Paper Contest at the 2023 IEEE International Symposium on Antennas and Propagation. He won Second Place in the Student Design Contest at the 2020 IEEE International Symposium on Antennas and Propagation and was a finalist in the Student Safety Technology Design Competition at the 2017 International Technical Conference on Enhanced Safety of Vehicles.
 
-In addition to studying electromagnetics, I enjoy working on electrical projects, film photography, running, and mountain biking.
+### Awards and Honors
+- IEEE MTT-S Graduate Fellowship Recipient (2023–2024)
+- Young Scientist Awardee, URSI General Assembly, Sapporro Japan (Aug. 2023)
+
+### Publication Awards
+- 1st Place, J. M. Merlo, A. Schlegel, J. A. Nanzer, IEEE/MTT-S International Microwave Symposium (IMS) Student Paper Contest (June 2023)
+- Honorable Mention, J. M. Merlo, J. A. Nanzer, IEEE International Symposium on Antennas and Propagation Student Paper Contest (July 2023)
+
+### Design Competition Awards
+- 2nd Place, J. M. Merlo, S. Vakalis, C. Hilton, J. Randall, IEEE International Symposium on Antennas and Propagation Student Design Competition (July 2020)
+- Finalist, J. M. Merlo, K. Lammers, R. Ashbaugh, A. Winarski, NHTSA Student Safety Technology Design Compettion, International Technical Conference on Enhanced Safety of Vehicles (July 2017)
