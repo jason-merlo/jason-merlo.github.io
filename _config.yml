@@ -104,9 +104,14 @@ facebook_id: # your facebook id
 # youtube_id: https://www.youtube.com/channel/UC_13S-_9imYPUVk5BHNTEpA # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 arxiv_userid: merlo_j_1
+scholar:
+  last_name: [Merlo]
+  first_name: [Jason M.]
 
 contact_note: >
   To contact me via email or to see more of my works, check out the links above.
+
+enable_publication_thumbnails: true
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -218,10 +223,11 @@ keep_files:
 # Plug-ins
 plugins:
   - jekyll-archives
-  - jekyll-diagrams
   - jekyll-email-protect
   - jekyll-feed
+  - jekyll-get-json
   - jekyll-imagemagick
+  # - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
@@ -230,7 +236,6 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-
 # Sitemap settings
 defaults:
   - scope:
@@ -292,10 +297,14 @@ scholar:
   details_link: Details
 
   query: "@*"
+  group_by: year
+  group_order: descending
 
-badges: # Display different badges for your publications
-  altmetric_badge: false # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions_badge: false # Dimensions badge (https://badge.dimensions.ai/)
+# Display different badges withs stats for your publications
+enable_publication_badges:
+  altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
+  dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
+  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords: [ieee, abbr, award, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, date-added, date-modified, video, bdsk-url-1]
