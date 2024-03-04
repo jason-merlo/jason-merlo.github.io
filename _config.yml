@@ -274,9 +274,8 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags wil
 # -----------------------------------------------------------------------------
 
 scholar:
-
   last_name: [Merlo]
-  first_name: [Jason M.]
+  first_name: [Jason, M.]
 
   style: ieee
   locale: en
