@@ -104,9 +104,6 @@ facebook_id: # your facebook id
 # youtube_id: https://www.youtube.com/channel/UC_13S-_9imYPUVk5BHNTEpA # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 arxiv_userid: merlo_j_1
-scholar:
-  last_name: [Merlo]
-  first_name: [Jason M.]
 
 contact_note: >
   To contact me via email or to see more of my works, check out the links above.
