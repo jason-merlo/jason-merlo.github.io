@@ -55,7 +55,6 @@ hr {
 }
 
 table {
-
   td,
   th {
     font-size: 1rem;
@@ -187,7 +186,6 @@ ul.task-list input[type="checkbox"] {
   font-weight: 300;
 }
 
-
 // Math
 
 .equation {
@@ -295,7 +293,6 @@ ul.task-list input[type="checkbox"] {
   // border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
-
 }
 
 .navbar .dropdown-menu {
@@ -362,7 +359,7 @@ ul.task-list input[type="checkbox"] {
     padding-top: 0;
     padding-left: 0;
     margin-left: 0;
-    font-size: 2.0rem;
+    font-size: 2rem;
 
     a {
       i::before {
@@ -790,7 +787,6 @@ footer.sticky-bottom {
           @media (max-width: 574px) {
             margin-left: 10px;
           }
-
         }
       }
 
@@ -1122,7 +1118,6 @@ nav[data-toggle="toc"] {
 
 /* small screens */
 @media (max-width: 622px) {
-
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
     visibility: hidden;

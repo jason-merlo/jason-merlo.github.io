@@ -1,11 +1,11 @@
 {
-	"folders": [
-		{
-			"path": "../website"
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "../website"
+    },
+    {
+      "path": "."
+    }
+  ],
+  "settings": {}
 }
