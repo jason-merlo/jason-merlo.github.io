@@ -4,11 +4,11 @@
 
 title: Jason Merlo
 first_name: Jason
-middle_name: Michael
+middle_name: M.
 last_name: Merlo
 email: jason [@] merlo [dot] io
 description: >
-  Jason Michael Merlo | PhD Student at Michigan State University studying Radar Systems
+  Jason Merlo | PhD Student at Michigan State University studying Radar Systems
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -271,7 +271,7 @@ display_tags: ["formatting", "images", "links", "math", "code"] # these tags wil
 
 scholar:
   last_name: [Merlo]
-  first_name: [Jason, M.]
+  first_name: [Jason M.]
 
   style: ieee
   locale: en
