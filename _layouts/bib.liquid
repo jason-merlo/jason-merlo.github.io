@@ -44,6 +44,15 @@
           <award class="badge award">{{ entry.award }}</award>
         {%- endif -%}
       {%- endif -%}
+      {%- if entry.award2 -%}
+        {%- if site.data.venues[entry.award2] -%}
+          <award class="badge award"
+            ><a href="{{site.data.venues[entry.abbr.award2].url}}" target="_blank">{{ entry.award }}</a>
+          </award>
+        {%- else -%}
+          <award class="badge award">{{ entry.award2 }}</award>
+        {%- endif -%}
+      {%- endif -%}
     {%- endif -%}
   </div>
 
