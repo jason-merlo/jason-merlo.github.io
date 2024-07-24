@@ -21,7 +21,7 @@ Jason was a Finalist in the Student Paper Competition at the IEEE International 
 ### Publication Awards
 
 - Finalist, J. M. Merlo, J. A. Nanzer, IEEE International Symposium on Antennas and Propagation Student Paper Contest (July 2024)
-- Finalist, J. M. Merlo, J. A. Nanzer, IEEE/MTT-S International Microwave Symposium (IMS) Student Paper Contest (June 2024)
+- Finalist, J. M. Merlo, Samuel Wagner, John Lancaster, J. A. Nanzer, IEEE/MTT-S International Microwave Symposium (IMS) Student Paper Contest (June 2024)
 - Honorable Mention, J. M. Merlo, J. A. Nanzer, IEEE International Symposium on Antennas and Propagation Student Paper Contest (July 2023)
 - 1st Place, J. M. Merlo, A. Schlegel, J. A. Nanzer, IEEE/MTT-S International Microwave Symposium (IMS) Student Paper Contest (June 2023)
 
