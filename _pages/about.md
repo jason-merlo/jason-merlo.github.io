@@ -22,8 +22,8 @@ Phased Array Systems & Technology in 2024; and he was a Finalist and Honorable M
 ### Publication Awards
 
 - 2nd Place, Student Paper Competition, J. M. Merlo, N. Shandi, M. Dula, A. Bhattacharyya, and J. A. Nanzer, 2024 IEEE International
-Symposium on Phased Array Systems & Technology (2024) [[Paper]](assets/pdf/2024_past.pdf) [[Poster]](assets/pdf/2024_past_spc_poster.pdf) 
-- Finalist, Student Paper Competition, J. M. Merlo, J. A. Nanzer, IEEE International Symposium on Antennas and Propagation (2024) [[Paper]](assets/pdf/aps24_angular_velocity_v1.0.pdf) [[Poster]](assets/pdf/2024_aps_spc_poster.pdf) 
+  Symposium on Phased Array Systems & Technology (2024) [[Paper]](assets/pdf/2024_past.pdf) [[Poster]](assets/pdf/2024_past_spc_poster.pdf)
+- Finalist, Student Paper Competition, J. M. Merlo, J. A. Nanzer, IEEE International Symposium on Antennas and Propagation (2024) [[Paper]](assets/pdf/aps24_angular_velocity_v1.0.pdf) [[Poster]](assets/pdf/2024_aps_spc_poster.pdf)
 - Top Papers of IMS 2024, J. M. Merlo, Samuel Wagner, John Lancaster, J. A. Nanzer, IEEE/MTT-S International Microwave Symposium (IMS) (2024) [[Paper]](assets/pdf/2024_mwtl_distributed_radar_flat.pdf)
 - Finalist, Student Paper Competition, J. M. Merlo, Samuel Wagner, John Lancaster, J. A. Nanzer, IEEE/MTT-S International Microwave Symposium (IMS) (2024) [[Paper]](assets/pdf/2024_mwtl_distributed_radar_flat.pdf)
 - Honorable Mention, Student Paper Competition, J. M. Merlo, J. A. Nanzer, IEEE International Symposium on Antennas and Propagation (2023) [[Paper]](assets/pdf/aps23_distributed_wideband_beamforming.pdf)
