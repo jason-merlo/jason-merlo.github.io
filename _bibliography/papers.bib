@@ -1,7 +1,7 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jason Merlo at 2024-10-24 07:14:49 -0400 
+%% Created for Jason Merlo at 2024-10-26 08:35:12 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -9,8 +9,8 @@
 
 
 @inproceedings{merlo2024past,
-	abstract={In this work we experimentally demonstrate a wirelessly coordinated three-element coherent distributed phased array performing beamforming and beam steering to a target in the far-field over 17 m at a carrier frequency of 1.05 GHz. We build on our previous work utilizing a high accuracy two-way time transfer (TWTT) technique for inter-node time synchronization and ranging and an analog continuous two-tone frequency transfer technique to perform syntonization by moving to a fully wireless architecture, without the need for external reference signals such as global navigation satellite system (GNSS)-derived pulse-per-second (PPS), including a distributed computing system architecture, and the use of fully wireless communication links between nodes. Finally, we perform a far-field beamforming experiment with beam steering to a receiver 17 m away at a carrier frequency of 1.05 GHz and demonstrate a beamforming coherent gain of 0.95 (9.32 dB) with a beamforming inter-element timing accuracy of below 60 ps.},
 	abbr = {PAST},
+	abstract = {In this work we experimentally demonstrate a wirelessly coordinated three-element coherent distributed phased array performing beamforming and beam steering to a target in the far-field over 17 m at a carrier frequency of 1.05 GHz. We build on our previous work utilizing a high accuracy two-way time transfer (TWTT) technique for inter-node time synchronization and ranging and an analog continuous two-tone frequency transfer technique to perform syntonization by moving to a fully wireless architecture, without the need for external reference signals such as global navigation satellite system (GNSS)-derived pulse-per-second (PPS), including a distributed computing system architecture, and the use of fully wireless communication links between nodes. Finally, we perform a far-field beamforming experiment with beam steering to a receiver 17 m away at a carrier frequency of 1.05 GHz and demonstrate a beamforming coherent gain of 0.95 (9.32 dB) with a beamforming inter-element timing accuracy of below 60 ps.},
 	address = {Boston, Massachusetts, USA},
 	author = {Jason M. {Merlo} and Naim {Shandi} and Matthew {Dula} and Ahona {Bhattacharyya} and Jeffrey A. {Nanzer}},
 	award = {SPC 2nd Place},
@@ -24,6 +24,22 @@
 	slides = {2024_past_slides.pdf},
 	title = {Fully Wireless Collaborative Beamforming Using A Three-Element Coherent Distributed Phased Array},
 	year = {2024}}
+
+@article{shandi2024tcom,
+    abbr = {TCOM},
+    abstract = {We demonstrate a wireless, decentralized time-alignment method for distributed antenna arrays and distributed wireless networks that achieves picosecond-level synchronization. Distributed antenna arrays consist of spatially separated antennas that coordinate their functionality at the wavelength level to achieve coherent operations such as distributed beamforming. Accurate time alignment (synchronization) of the local clocks on each node in the array is necessary to support accurate time-delay beamforming of modulated signals. In this work we combine a consensus averaging algorithm and a high-accuracy wireless two-way time transfer method to achieve decentralized time alignment, correcting for the time-varying bias of the clocks in a method that has no central node. Internode time transfer is based on a spectrally-sparse, two-tone signal achieving near-optimal time delay accuracy. We experimentally demonstrate the approach in a wireless four-node software-defined radio system, with various network connectivity graphs. We show that within 20 iterations all the nodes achieve convergence within a bias of less than 12 ps and a standard deviation of less than 3 ps. The performance is evaluated versus the bandwidth of the two-tone waveform, which impacts the synchronization error, and versus the signal-to-noise ratio.},
+	author = {Shandi, Naim and Merlo, Jason M. and Nanzer, Jeffrey A.},
+	date-added = {2024-10-26 08:34:08 -0400},
+	date-modified = {2024-10-26 08:34:29 -0400},
+	doi = {10.1109/TCOMM.2024.3480993},
+	journal = {IEEE Transactions on Communications},
+	keywords = {Synchronization;Clocks;Accuracy;Estimation;Phased arrays;Topology;Signal to noise ratio;Delay effects;Array signal processing;Time-frequency analysis;Consensus averaging;distributed antenna arrays;distributed beamforming;distributed phased arrays;synchronization;wireless networks},
+	month = {October},
+	pages = {1-1},
+	bibtex_show = {true},
+	title = {Decentralized Picosecond Synchronization for Distributed Wireless Systems},
+	year = {2024},
+	ieee = {https://doi.org/10.1109/TCOMM.2024.3480993}}
 
 @inproceedings{merlo2024grcon,
 	abbr = {GRCon},
@@ -44,7 +60,8 @@
 	author = {Jason M. {Merlo} and Jeffrey A. {Nanzer}},
 	award = {SPC Finalist},
 	bibtex_show = {true},
-	booktitle = {IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting},
+	booktitle = {2024 IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
+	date-modified = {2024-10-26 08:32:47 -0400},
 	month = {July},
 	pages = {1-2},
 	pdf = {aps24_angular_velocity_v1.0.pdf},
@@ -53,6 +70,38 @@
 	slides = {2024_aps_ursi_slides.pdf},
 	title = {Distributed Interferometric Radar for Radial and Angular Velocity Measurement},
 	year = {2024}}
+
+@inproceedings{shandi2024aps,
+    abstract = {We present a decentralized approach to wireless picosecond-level synchronization of distributed antenna array elements that weights its connections based on the signal-to-noise ratio of the links between nodes. Time synchronization is a critical aspect of distributed phased array performance, and is a principal factor limiting the bandwidth of distributed beam-forming operations. We previously demonstrated decentralized synchronization with picosecond-level accuracy using a consensus averaging approach, where nodes iteratively share information among their neighbors to converge to the global average of the time offsets between nodes. Ensuring that all nodes in a distributed array reach consensus on a common time reference depends on the accuracy of the individual links, however, and low SNR links will generate poor time estimates, increasing the residual error of the converged state. Here, we propose a new weighting strategy based on evaluating the SNR in every iteration to allow for time information sharing only between the nodes with highest received SNR. We evaluate the approach experimentally through the implementation of a six-node system using software defined radios (SDRs), yielding in an order of magnitude improvement in accuracy relative to the case of a fully connected antenna array with a static topology.},
+	abbr = {AP-S/URSI},
+	author = {{Shandi}, Naim and {Merlo}, Jason M. and {Nanzer}, Jeffrey A.},
+	bibtex_show = {true},
+	booktitle = {2024 IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
+	date-modified = {2024-10-26 08:32:05 -0400},
+	doi = {10.1109/AP-S/INC-USNC-URSI52054.2024.10686155},
+	ieee = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686155},
+	keywords = {Wireless communication;Phased arrays;Accuracy;Limiting;Conferences;Information sharing;Topology},
+	month = {July},
+	pages = {1873-1874},
+	title = {High Accuracy Decentralized Time Synchronization Using SNR Based Weighting},
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686155}}
+
+@inproceedings{luzano2024distributed,
+    abstract = {Interferometric imaging, such as that used in radio astronomy and satellite remote sensing, relies on co-processing signals received by antenna elements with wide electrical separations, yielding samples of the spatial Fourier domain that are used for image formation. Traditionally, this has been done only in fixed systems, either on the ground or on a single platform. In this paper, we demonstrate the ability to sample the spatial Fourier domain using a distributed microwave receiving array with wireless coordination of time and frequency. We implement a two-element receiving system based on software-defined radios that co-process received signals via cross-correlation, yielding samples of the spatial Fourier domain. We measure the complex interference pattern at 2.3 GHz and 3.3 GHz, representing baselines of 7λ and lOλ, respectively. The results demonstrate the feasibility of distributed Fourier domain sampling, a fundamental building block for distributed Fourier-domain imaging.},
+	abbr = {AP-S/URSI},
+	bibtex_show = {true},
+	author = {Luzano, Derek and Merlo, Jason M. and Chen, Daniel and Colon--Berrios, Jorge R. and Bhattacharyya, Ahona and Nanzer, Jeffrey A.},
+	booktitle = {2024 IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
+	date-added = {2024-10-26 08:33:06 -0400},
+	date-modified = {2024-10-26 08:33:56 -0400},
+	doi = {10.1109/AP-S/INC-USNC-URSI52054.2024.10686889},
+	keywords = {Wireless communication;Microwave measurement;Wireless sensor networks;Time-frequency analysis;Satellite antennas;Satellite broadcasting;Radio interferometry},
+	month = {July},
+	pages = {1455-1456},
+	title = {A Distributed Microwave Correlation Interferometer for Fourier Domain Imaging Using Wireless Time and Frequency Coordination},
+	year = {2024},
+	ieee = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686889}}
 
 @article{merlo2024ims-mwtl,
 	abbr = {IEEE MWTL (IMS)},
