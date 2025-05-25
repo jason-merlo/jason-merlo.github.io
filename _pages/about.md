@@ -6,7 +6,7 @@ nav: true
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_picture.jpg
 ---
 
 Jason received the B.S. degree in computer engineering from Michigan State University, East Lansing, MI, USA in 2018, where he is currently a Ph.D. candidate in electrical engineering. From 2017-2021 he was project manager and electrical systems team lead of the Michigan State University AutoDrive Challenge team. His current research interests include software-defined radios, distributed radar and wireless system synchronization, interferometric arrays, synthetic aperture radar, joint radar-communications, and automotive radar applications. He currently maintains several Python/C++ software packages as part of the DELTA Framework used in-house for software-defined radio, radar, and distributed array coordination simulation and real-time signal processing (public components of the software can be accessed at [gitlab.msu.edu/delta/da-framework](https://gitlab.msu.edu/delta/da-framework)).

@@ -5,7 +5,7 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_picture.jpg
 
 news: true
 social: false
