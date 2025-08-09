@@ -1,14 +1,33 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for Jason Merlo at 2024-10-26 08:35:12 -0400 
+%% Created for Jason Merlo at 2025-08-09 12:50:12 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
+
+
+@phdthesis{merloj2025dissertation,
+	abbr = {PhD Dissertation},
+	abstract = {Antenna arrays have become an essential piece of modern life enabling applications from high bandwidth mobile communications to radar and earth remote sensing by providing high directivity and electronically controllable beam patterns. Traditionally, these arrays have been assembled using antenna elements with fixed locations, coupled via fixed radio frequency (RF) transmission lines to a central processing location. In recent years, demands for more resilient versatile multifunction antenna arrays have spurred interest in wirelessly coordinated coherent distributed antenna arrays (CDAs) wherein individual elements or groups of elements (i.e., subarrays), referred to as nodes, can be moved freely relative to one another with the RF signals being generated and digitized on node and processed in a partially- or fully-decentralized manner. This provides CDAs with several distinct advantages over traditional fixed arrays: due to the mobility of the elements, the element locations can be reconfigured based on the desired beam pattern for a given operating mode and frequency; nodes may join and leave the array in an ad-hoc manner allowing array deployments over time and graceful degradation upon node failure; and because each node provides its own power source, the overall array gain scales as N2 as opposed to N for conventional arrays, enabling high bandwidth communication and high sensitivity sensing with lower system power handling requirements on any single node. While these advantages are significant, the challenge of wirelessly coordinating the electrical states---time, frequency, and phase---of each element to a sub-wavelength level remains an area of ongoing research. Generally, these arrays can be implemented in a ``closed-loop'' configuration where the array elements receive feedback from a cooperative receiver node in a communications-type application, or in an ``open-loop'' configuration where the nodes directly coordinate their states amongst themselves, enabling communication with conventional, noncooperative communications terminals as well as radar and remote sensing operations where the destination is typically passive.In this work, I present a system for high-accuracy coordination of the RF electrical states for CDA nodes consisting of commercial off-the-shelf (COTS) software-defined radios (SDRs). I will discuss a computationally-efficient high-accuracy time and phase synchronization technique which utilizes spectrally-sparse waveforms to minimize spectrum utilization while simultaneously maximizing the lower-bound on accuracy and a multi-stage refinement technique to achieve synchronization on the order of picoseconds. Furthermore, I will discuss a new high-accuracy frequency syntonization technique based on the high-accuracy synchronization method which estimates and compensates for the platform oscillator frequency offsets using temporally-sparse timing estimates. This technique provides advantages over previous techniques in that it is tolerant to relative motion, multipath, and non-line-of-sight (NLoS); it is necessarily both spectrally- and temporally-sparse which directly provides high-accuracy; and it is fully-digital and can be directly implemented on existing COTS SDR hardware without requiring voltage tunable oscillators. Finally, I will demonstrate several applications of CDAs ranging from collaborative beamforming which operates similar to conventional phased arrays to long-baseline interferometry which utilizes the spatial sparsity of the antenna elements to perform direct measurements of a scene in the spatial frequency domain.},
+	author = {Merlo, Jason M.},
+	date-modified = {2025-08-09 12:50:12 -0400},
+	isbn = {9798290927442},
+	journal = {ProQuest Dissertations and Theses},
+	keywords = {Clock synchronization; Distributed antenna arrays; Beamforming; Software-defined radio; Radio frequency; Electrical engineering; Computer engineering; Electromagnetics; Communication; 0607:Electromagnetics; 0459:Communication; 0544:Electrical engineering; 0464:Computer Engineering},
+	language = {English},
+	pages = {219},
+	school = {Michigan State University},
+	title = {Wirelessly Coordinated Open-Loop Coherent Distributed Antenna Arrays Using Software-Defined Radio},
+	proquest-url = {https://www.proquest.com/dissertations-theses/wirelessly-coordinated-open-loop-coherent/docview/3236317751/se-2},
+	year = {2025},
+	bibtex_show = {true},
+	bdsk-url-1 = {https://www.proquest.com/dissertations-theses/wirelessly-coordinated-open-loop-coherent/docview/3236317751/se-2}}
+
 @inproceedings{merlo2025apsursi,
 	abbr = {IEEE AP-S/URSI},
-	abstract = {In recent years, a significant interest in wirelessly coordinated distributed antenna arrays has emerged due to their unique benefits they can provide to communication and remote sensing applications. Due to the distributed nature of these arrays, they are inherently scalable, allowing elements to join and leave the array in an ad-hoc manner, providing robustness to element failure, as well as the ability to be reconfigured during operation to provide more favorable beam patterns for a given frequency or mode of operation. While wirelessly coordinated distributed phased arrays (DPAs) will be an enabling technology, the challenge of efficient electrical state coordination of each array element remains open, requiring each element to be coordinated to a fraction of the carrier wavelength to ensure high levels of coherence to support beamforming. While fine coordination impairments may be corrected on the receive side a posteriori given sufficient computational power, transmit beamforming requires all elements’ electrical states to be aligned prior to transmission to achieve coherent summation of transmitted waveforms in the desired directions, necessitating real-time wireless coordination. In this work we demonstrate the application of a fully digital wirelessly coordinated DPA for collaborative beamforming by building on previous work developing a computationally efficient fully digital wireless high-accuracy time synchronization technique (S. Prager, M. S. Haynes, and M. Moghaddam, IEEE Trans. Microw. Theory Tech.s, vol. 68, no. 11, pp. 4787–4804, 2020.; J. M. Merlo, S. R. Mghabghab, and J. A. Nanzer, IEEE Trans. Microw. Theory Tech., vol. 71, pp. 1720–1731, Dec. 2022.). While previous works have demonstrated beamforming using fully-wirelessly coordinated DPAs, they have relied on global navigation satellite system (GNSS)-based, or ad-hoc, continuous analog frequency references for frequency alignment. More recently, a fully digital coordination technique for DPAs was demonstrated using a pulsed single tone spectral estimation technique enabling decentralized frequency estimation (R. H. Kenney and J. W. McDaniel, 2024 IEEE/MTT-S IMS 2024, pp. 493–496, 2024.); however, this is the first demonstration known to the authors using a high-accuracy time-based technique to estimate and compensate for time, frequency, and phase offsets simultaneously at the carrier wavelength, without using direct spectral estimation, simplifying the estimation process, and eliminating the possibility of ambiguity when compared with carrier phase-based tracking techniques. Furthermore, due to the simplicity and efficiency of the algorithm, the entire process may be performed using off the shelf software-defined radios (SDRs) and all necessary processing is performed on commodity general purpose desktop processors without requiring acceleration using specialized graphics processing units (GPUs) or field-programmable gate arrays (FPGAs).},
+	abstract = {In recent years, a significant interest in wirelessly coordinated distributed antenna arrays has emerged due to their unique benefits they can provide to communication and remote sensing applications. Due to the distributed nature of these arrays, they are inherently scalable, allowing elements to join and leave the array in an ad-hoc manner, providing robustness to element failure, as well as the ability to be reconfigured during operation to provide more favorable beam patterns for a given frequency or mode of operation. While wirelessly coordinated distributed phased arrays (DPAs) will be an enabling technology, the challenge of efficient electrical state coordination of each array element remains open, requiring each element to be coordinated to a fraction of the carrier wavelength to ensure high levels of coherence to support beamforming. While fine coordination impairments may be corrected on the receive side a posteriori given sufficient computational power, transmit beamforming requires all elements' electrical states to be aligned prior to transmission to achieve coherent summation of transmitted waveforms in the desired directions, necessitating real-time wireless coordination. In this work we demonstrate the application of a fully digital wirelessly coordinated DPA for collaborative beamforming by building on previous work developing a computationally efficient fully digital wireless high-accuracy time synchronization technique (S. Prager, M. S. Haynes, and M. Moghaddam, IEEE Trans. Microw. Theory Tech.s, vol. 68, no. 11, pp. 4787--4804, 2020.; J. M. Merlo, S. R. Mghabghab, and J. A. Nanzer, IEEE Trans. Microw. Theory Tech., vol. 71, pp. 1720--1731, Dec. 2022.). While previous works have demonstrated beamforming using fully-wirelessly coordinated DPAs, they have relied on global navigation satellite system (GNSS)-based, or ad-hoc, continuous analog frequency references for frequency alignment. More recently, a fully digital coordination technique for DPAs was demonstrated using a pulsed single tone spectral estimation technique enabling decentralized frequency estimation (R. H. Kenney and J. W. McDaniel, 2024 IEEE/MTT-S IMS 2024, pp. 493--496, 2024.); however, this is the first demonstration known to the authors using a high-accuracy time-based technique to estimate and compensate for time, frequency, and phase offsets simultaneously at the carrier wavelength, without using direct spectral estimation, simplifying the estimation process, and eliminating the possibility of ambiguity when compared with carrier phase-based tracking techniques. Furthermore, due to the simplicity and efficiency of the algorithm, the entire process may be performed using off the shelf software-defined radios (SDRs) and all necessary processing is performed on commodity general purpose desktop processors without requiring acceleration using specialized graphics processing units (GPUs) or field-programmable gate arrays (FPGAs).},
 	author = {Jason M. {Merlo} and Jeffrey A. {Nanzer}},
 	bibtex_show = {true},
 	booktitle = {2025 IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
@@ -20,25 +39,22 @@
 	year = {2025}}
 
 @article{merlo2025real,
-  title={Real-Time High-Accuracy Digital Wireless Time, Frequency, and Phase Calibration For Coherent Distributed Antenna Arrays},
-  author={Merlo, Jason M. and Wagner, Samuel and Lancaster, John and Nanzer, Jeffrey A.},
-  journal={arXiv preprint arXiv:2506.07267},
-  year={2025},
-  abstract = {This work presents a fully-digital high-accuracy real-time calibration procedure for frequency and time alignment of open-loop wirelessly coordinated coherent distributed antenna array (CDA) modems, enabling RF phase coherence of spatially separated commercial off-the-shelf (COTS) software-defined radios (SDRs) without any cables or external references such as global navigation satellite system (GNSS). Building on previous work using high-accuracy spectrally-sparse time of arrival (ToA) waveforms and a multi-step ToA refinement process, a high-accuracy two-way time transfer (TWTT)-based time-frequency coordination approach is demonstrated. By using a high-accuracy time estimation approach, frequency estimates can be derived over long observation intervals leading to a high-accuracy frequency estimate, without the requirement for long pulse durations as is required for direct spectral frequency estimation techniques, minimizing coordination overhead. Furthermore, due to the two-way nature of the high-accuracy TWTT approach, the time and frequency estimates are Doppler and multi-path tolerant, so long as the channel is reciprocal over the synchronization epoch. This technique is experimentally verified by demonstrating wireless distributed array coordination using COTS SDRs in a lab environment in static and dynamic scenarios and with significant multipath scatterers. Time, frequency, and phase stability were measured over coaxial cables to an oscilloscope and achieved time and phase coordination precision of ~60-70 ps, with median coherent gains above 99% using optimized parameters, and a beamforming frequency RMSE of 3.73 ppb in a dynamic scenario. Finally, experiments are conducted to compare the performance of this technique with previous work works using an analog continuous-wave two-tone (CWTT) frequency reference technique in both static and dynamic settings as a benchmark.},
-  arxiv = {2506.07267},
-  abbr = {Preprint},
-}
+	abbr = {Preprint},
+	abstract = {This work presents a fully-digital high-accuracy real-time calibration procedure for frequency and time alignment of open-loop wirelessly coordinated coherent distributed antenna array (CDA) modems, enabling RF phase coherence of spatially separated commercial off-the-shelf (COTS) software-defined radios (SDRs) without any cables or external references such as global navigation satellite system (GNSS). Building on previous work using high-accuracy spectrally-sparse time of arrival (ToA) waveforms and a multi-step ToA refinement process, a high-accuracy two-way time transfer (TWTT)-based time-frequency coordination approach is demonstrated. By using a high-accuracy time estimation approach, frequency estimates can be derived over long observation intervals leading to a high-accuracy frequency estimate, without the requirement for long pulse durations as is required for direct spectral frequency estimation techniques, minimizing coordination overhead. Furthermore, due to the two-way nature of the high-accuracy TWTT approach, the time and frequency estimates are Doppler and multi-path tolerant, so long as the channel is reciprocal over the synchronization epoch. This technique is experimentally verified by demonstrating wireless distributed array coordination using COTS SDRs in a lab environment in static and dynamic scenarios and with significant multipath scatterers. Time, frequency, and phase stability were measured over coaxial cables to an oscilloscope and achieved time and phase coordination precision of ~60-70 ps, with median coherent gains above 99% using optimized parameters, and a beamforming frequency RMSE of 3.73 ppb in a dynamic scenario. Finally, experiments are conducted to compare the performance of this technique with previous work works using an analog continuous-wave two-tone (CWTT) frequency reference technique in both static and dynamic settings as a benchmark.},
+	arxiv = {2506.07267},
+	author = {Merlo, Jason M. and Wagner, Samuel and Lancaster, John and Nanzer, Jeffrey A.},
+	journal = {arXiv preprint arXiv:2506.07267},
+	title = {Real-Time High-Accuracy Digital Wireless Time, Frequency, and Phase Calibration For Coherent Distributed Antenna Arrays},
+	year = {2025}}
 
 @article{merlo2025collaborative,
-  title={Collaborative Beamforming for Communication Applications Using a Two-Element Fully-Wireless Open-Loop Coherent Distributed Array},
-  author={Merlo, Jason M. and Nanzer, Jeffrey A.},
-  journal={arXiv preprint arXiv:2506.13014},
-  year={2025},
-  abstract = {In this work we demonstrate a proof of concept of a fully-wireless two-node open-loop coherent distributed communication system and evaluate its performance by transmitting QPSK , 64-, and 256-QAM constellations at a symbol rate of 2 MBd over a 58 m link in an urban environment. The system is implemented in a distributed manner with on-node processing using software-defined radios (SDRs) and wireless internode communication to share coordination information and does not rely on external time or frequency references such as the global navigation satellite system (GNSS). In each experiment ~100 messages were transmitted and a mean coherent gain of 0.936 was achieved across all measurements with a mean symbol error ratio of below 1.4e10^−4 achieved up to 64-QAM, demonstrating a reliable bandwidth of up to 12 Mbps.},
-  arxiv = {2506.13014},
-  abbr = {Preprint},
-}
-
+	abbr = {Preprint},
+	abstract = {In this work we demonstrate a proof of concept of a fully-wireless two-node open-loop coherent distributed communication system and evaluate its performance by transmitting QPSK , 64-, and 256-QAM constellations at a symbol rate of 2 MBd over a 58 m link in an urban environment. The system is implemented in a distributed manner with on-node processing using software-defined radios (SDRs) and wireless internode communication to share coordination information and does not rely on external time or frequency references such as the global navigation satellite system (GNSS). In each experiment ~100 messages were transmitted and a mean coherent gain of 0.936 was achieved across all measurements with a mean symbol error ratio of below 1.4e10^−4 achieved up to 64-QAM, demonstrating a reliable bandwidth of up to 12 Mbps.},
+	arxiv = {2506.13014},
+	author = {Merlo, Jason M. and Nanzer, Jeffrey A.},
+	journal = {arXiv preprint arXiv:2506.13014},
+	title = {Collaborative Beamforming for Communication Applications Using a Two-Element Fully-Wireless Open-Loop Coherent Distributed Array},
+	year = {2025}}
 
 @inproceedings{merlo2024past,
 	abbr = {IEEE PAST},
@@ -49,27 +65,28 @@
 	bibtex_show = {true},
 	booktitle = {2024 IEEE International Symposium on Phased Array Systems \& Technology (PAST)},
 	date-modified = {2024-10-24 07:14:38 -0400},
+	ieee = {https://doi.org/10.1109/ARRAY58370.2024.10880359},
 	month = {October},
 	pdf = {2024_past.pdf},
 	poster = {2024_past_spc_poster.pdf},
 	selected = {true},
 	slides = {2024_past_slides.pdf},
 	title = {Fully Wireless Collaborative Beamforming Using A Three-Element Coherent Distributed Phased Array},
-	year = {2024},
-	ieee = {https://doi.org/10.1109/ARRAY58370.2024.10880359}}
+	year = {2024}}
 
-@ARTICLE{shandi2024synchronization,
-  abbr = {IEEE TCOM},
-  abstract = {We demonstrate a wireless, decentralized time-alignment method for distributed antenna arrays and distributed wireless networks that achieves picosecond-level synchronization. Distributed antenna arrays consist of spatially separated antennas that coordinate their functionality at the wavelength level to achieve coherent operations such as distributed beamforming. Accurate time alignment (synchronization) of the local clocks on each node in the array is necessary to support accurate time-delay beamforming of modulated signals. In this work we combine a consensus averaging algorithm and a high-accuracy wireless two-way time transfer method to achieve decentralized time alignment, correcting for the time-varying bias of the clocks in a method that has no central node. Internode time transfer is based on a spectrally-sparse, two-tone signal achieving near-optimal time delay accuracy. We experimentally demonstrate the approach in a wireless four-node software-defined radio system, with various network connectivity graphs. We show that within 20 iterations all the nodes achieve convergence within a bias of less than 12 ps and a standard deviation of less than 3 ps. The performance is evaluated versus the bandwidth of the two-tone waveform, which impacts the synchronization error, and versus the signal-to-noise ratio.},
-  author={Shandi, Naim and Merlo, Jason M. and Nanzer, Jeffrey A.},
-  journal={IEEE Transactions on Communications}, 
-  title={Decentralized Picosecond Synchronization for Distributed Wireless Systems}, 
-  month={October},
-  year={2024},
-  bibtex_show=True,
-  keywords={Synchronization;Clocks;Accuracy;Estimation;Phased arrays;Topology;Signal to noise ratio;Delay effects;Array signal processing;Time-frequency analysis;Consensus averaging;distributed antenna arrays;distributed beamforming;distributed phased arrays;synchronization;wireless networks},
-  doi={10.1109/TCOMM.2024.3480993},
-  ieee = {https://doi.org/10.1109/TCOMM.2024.3480993}}
+@article{shandi2024synchronization,
+	abbr = {IEEE TCOM},
+	abstract = {We demonstrate a wireless, decentralized time-alignment method for distributed antenna arrays and distributed wireless networks that achieves picosecond-level synchronization. Distributed antenna arrays consist of spatially separated antennas that coordinate their functionality at the wavelength level to achieve coherent operations such as distributed beamforming. Accurate time alignment (synchronization) of the local clocks on each node in the array is necessary to support accurate time-delay beamforming of modulated signals. In this work we combine a consensus averaging algorithm and a high-accuracy wireless two-way time transfer method to achieve decentralized time alignment, correcting for the time-varying bias of the clocks in a method that has no central node. Internode time transfer is based on a spectrally-sparse, two-tone signal achieving near-optimal time delay accuracy. We experimentally demonstrate the approach in a wireless four-node software-defined radio system, with various network connectivity graphs. We show that within 20 iterations all the nodes achieve convergence within a bias of less than 12 ps and a standard deviation of less than 3 ps. The performance is evaluated versus the bandwidth of the two-tone waveform, which impacts the synchronization error, and versus the signal-to-noise ratio.},
+	author = {Shandi, Naim and Merlo, Jason M. and Nanzer, Jeffrey A.},
+	bibtex_show = True,
+	doi = {10.1109/TCOMM.2024.3480993},
+	ieee = {https://doi.org/10.1109/TCOMM.2024.3480993},
+	journal = {IEEE Transactions on Communications},
+	keywords = {Synchronization;Clocks;Accuracy;Estimation;Phased arrays;Topology;Signal to noise ratio;Delay effects;Array signal processing;Time-frequency analysis;Consensus averaging;distributed antenna arrays;distributed beamforming;distributed phased arrays;synchronization;wireless networks},
+	month = {October},
+	title = {Decentralized Picosecond Synchronization for Distributed Wireless Systems},
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.1109/TCOMM.2024.3480993}}
 
 @inproceedings{merlo2024grcon,
 	abbr = {GRCon},
@@ -92,20 +109,21 @@
 	bibtex_show = {true},
 	booktitle = {2024 IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
 	date-modified = {2024-10-26 08:32:47 -0400},
+	doi = {10.1109/AP-S/INC-USNC-URSI52054.2024.10686149},
+	ieee = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686149},
 	month = {July},
 	pages = {1-2},
 	pdf = {aps24_angular_velocity_v1.0.pdf},
 	poster = {2024_aps_spc_poster.pdf},
 	selected = {true},
 	slides = {2024_aps_ursi_slides.pdf},
-	ieee = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686149},
-	doi = {10.1109/AP-S/INC-USNC-URSI52054.2024.10686149},
 	title = {Distributed Interferometric Radar for Radial and Angular Velocity Measurement},
-	year = {2024}}
+	year = {2024},
+	bdsk-url-1 = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686149}}
 
 @inproceedings{shandi2024aps,
-    abstract = {We present a decentralized approach to wireless picosecond-level synchronization of distributed antenna array elements that weights its connections based on the signal-to-noise ratio of the links between nodes. Time synchronization is a critical aspect of distributed phased array performance, and is a principal factor limiting the bandwidth of distributed beam-forming operations. We previously demonstrated decentralized synchronization with picosecond-level accuracy using a consensus averaging approach, where nodes iteratively share information among their neighbors to converge to the global average of the time offsets between nodes. Ensuring that all nodes in a distributed array reach consensus on a common time reference depends on the accuracy of the individual links, however, and low SNR links will generate poor time estimates, increasing the residual error of the converged state. Here, we propose a new weighting strategy based on evaluating the SNR in every iteration to allow for time information sharing only between the nodes with highest received SNR. We evaluate the approach experimentally through the implementation of a six-node system using software defined radios (SDRs), yielding in an order of magnitude improvement in accuracy relative to the case of a fully connected antenna array with a static topology.},
 	abbr = {AP-S/URSI},
+	abstract = {We present a decentralized approach to wireless picosecond-level synchronization of distributed antenna array elements that weights its connections based on the signal-to-noise ratio of the links between nodes. Time synchronization is a critical aspect of distributed phased array performance, and is a principal factor limiting the bandwidth of distributed beam-forming operations. We previously demonstrated decentralized synchronization with picosecond-level accuracy using a consensus averaging approach, where nodes iteratively share information among their neighbors to converge to the global average of the time offsets between nodes. Ensuring that all nodes in a distributed array reach consensus on a common time reference depends on the accuracy of the individual links, however, and low SNR links will generate poor time estimates, increasing the residual error of the converged state. Here, we propose a new weighting strategy based on evaluating the SNR in every iteration to allow for time information sharing only between the nodes with highest received SNR. We evaluate the approach experimentally through the implementation of a six-node system using software defined radios (SDRs), yielding in an order of magnitude improvement in accuracy relative to the case of a fully connected antenna array with a static topology.},
 	author = {{Shandi}, Naim and {Merlo}, Jason M. and {Nanzer}, Jeffrey A.},
 	bibtex_show = {true},
 	booktitle = {2024 IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
@@ -120,20 +138,21 @@
 	bdsk-url-1 = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686155}}
 
 @inproceedings{luzano2024distributed,
-    abstract = {Interferometric imaging, such as that used in radio astronomy and satellite remote sensing, relies on co-processing signals received by antenna elements with wide electrical separations, yielding samples of the spatial Fourier domain that are used for image formation. Traditionally, this has been done only in fixed systems, either on the ground or on a single platform. In this paper, we demonstrate the ability to sample the spatial Fourier domain using a distributed microwave receiving array with wireless coordination of time and frequency. We implement a two-element receiving system based on software-defined radios that co-process received signals via cross-correlation, yielding samples of the spatial Fourier domain. We measure the complex interference pattern at 2.3 GHz and 3.3 GHz, representing baselines of 7λ and lOλ, respectively. The results demonstrate the feasibility of distributed Fourier domain sampling, a fundamental building block for distributed Fourier-domain imaging.},
 	abbr = {AP-S/URSI},
-	bibtex_show = {true},
+	abstract = {Interferometric imaging, such as that used in radio astronomy and satellite remote sensing, relies on co-processing signals received by antenna elements with wide electrical separations, yielding samples of the spatial Fourier domain that are used for image formation. Traditionally, this has been done only in fixed systems, either on the ground or on a single platform. In this paper, we demonstrate the ability to sample the spatial Fourier domain using a distributed microwave receiving array with wireless coordination of time and frequency. We implement a two-element receiving system based on software-defined radios that co-process received signals via cross-correlation, yielding samples of the spatial Fourier domain. We measure the complex interference pattern at 2.3 GHz and 3.3 GHz, representing baselines of 7λ and lOλ, respectively. The results demonstrate the feasibility of distributed Fourier domain sampling, a fundamental building block for distributed Fourier-domain imaging.},
 	author = {Luzano, Derek and Merlo, Jason M. and Chen, Daniel and Colon--Berrios, Jorge R. and Bhattacharyya, Ahona and Nanzer, Jeffrey A.},
+	bibtex_show = {true},
 	booktitle = {2024 IEEE International Symposium on Antennas and Propagation and INC/USNC‐URSI Radio Science Meeting (AP-S/INC-USNC-URSI)},
 	date-added = {2024-10-26 08:33:06 -0400},
 	date-modified = {2024-10-26 08:33:56 -0400},
 	doi = {10.1109/AP-S/INC-USNC-URSI52054.2024.10686889},
+	ieee = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686889},
 	keywords = {Wireless communication;Microwave measurement;Wireless sensor networks;Time-frequency analysis;Satellite antennas;Satellite broadcasting;Radio interferometry},
 	month = {July},
 	pages = {1455-1456},
 	title = {A Distributed Microwave Correlation Interferometer for Fourier Domain Imaging Using Wireless Time and Frequency Coordination},
 	year = {2024},
-	ieee = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686889}}
+	bdsk-url-1 = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10686889}}
 
 @article{merlo2024ims-mwtl,
 	abbr = {IEEE MWTL (IMS)},

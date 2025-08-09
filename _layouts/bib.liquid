@@ -187,6 +187,12 @@
       {% if entry.ieee %}
         <a href="{{ entry.ieee }}" class="btn btn-sm z-depth-0" role="button">IEEE Xplore</a>
       {% endif %}
+      {% if entry.url %}
+        <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button">URL</a>
+      {% endif %}
+      {% if entry.proquest-url %}
+        <a href="{{ entry.proquest-url }}" class="btn btn-sm z-depth-0" role="button">ProQuest</a>
+      {% endif %}
       {% if entry.video %}
         <a href="{{ entry.video }}" class="btn btn-sm z-depth-0" role="button">Video</a>
       {% endif %}
