@@ -1,0 +1,17 @@
+[workspace]
+channels = ["conda-forge"]
+name = "jason-merlo.github.io"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+install_bundler = { cmd = ["gem", "install", "bundler"] }
+install = {depends-on = ['install_bundler'], cmd = ["bundler", "install"]}
+serve = {depends-on = ['install'], cmd = ["bundle", "exec", "jekyll", "serve"]}
+
+[dependencies]
+ruby = ">=3.4.7,<4"
+c-compiler = ">=1.11.0,<2"
+compilers = ">=1.11.0,<2"
+cxx-compiler = ">=1.11.0,<2"
+imagemagick = ">=7.1.2_10,<8"
