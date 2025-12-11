@@ -87,7 +87,7 @@ osf_id: # your OSF ID
 research_gate_profile: # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 # blogger_url: # your blogger URL
-work_url: https://www.egr.msu.edu/emrg/profile/jason-merlo # work page URL
+work_url: https://engineering.msu.edu/faculty/m/jason-merlo # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
@@ -304,6 +304,7 @@ enable_publication_badges:
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
   [
+    proquest-url,
     ieee,
     abbr,
     award,
