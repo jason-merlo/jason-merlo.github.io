@@ -6,7 +6,25 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
-
+@article{merlo2025real,
+	abbr = {IEEE T-MTT},
+	abstract = {This work presents a fully-digital high-accuracy real-time calibration procedure for frequency and time alignment of open-loop wirelessly coordinated coherent distributed antenna array (CDA) modems, enabling RF phase coherence of spatially separated commercial off-the-shelf (COTS) software-defined radios (SDRs) without any cables or external references such as global navigation satellite system (GNSS). Building on previous work using high-accuracy spectrally-sparse time of arrival (ToA) waveforms and a multi-step ToA refinement process, a high-accuracy two-way time transfer (TWTT)-based time-frequency coordination approach is demonstrated. By using a high-accuracy time estimation approach, frequency estimates can be derived over long observation intervals leading to a high-accuracy frequency estimate, without the requirement for long pulse durations as is required for direct spectral frequency estimation techniques, minimizing coordination overhead. Furthermore, due to the two-way nature of the high-accuracy TWTT approach, the time and frequency estimates are Doppler and multi-path tolerant, so long as the channel is reciprocal over the synchronization epoch. This technique is experimentally verified by demonstrating wireless distributed array coordination using COTS SDRs in a lab environment in static and dynamic scenarios and with significant multipath scatterers. Time, frequency, and phase stability were measured over coaxial cables to an oscilloscope and achieved time and phase coordination precision of ~60-70 ps, with median coherent gains above 99% using optimized parameters, and a beamforming frequency RMSE of 3.73 ppb in a dynamic scenario. Finally, experiments are conducted to compare the performance of this technique with previous work works using an analog continuous-wave two-tone (CWTT) frequency reference technique in both static and dynamic settings as a benchmark.},
+	arxiv = {2506.07267},
+	author = {Merlo, Jason M. and Wagner, Samuel and Lancaster, John B. and Nanzer, Jeffrey A.},
+	journal = {IEEE Transactions on Microwave Theory and Techniques}, 
+	ieee = {https://doi.org/10.1109/TMTT.2025.3639461},
+	doi = {10.1109/TMTT.2025.3639461},
+	bibtex_show={true},
+	year={2025},
+	month={December},
+	volume={},
+	number={},
+	selected={true},
+	pages={1-19},
+	keywords={Time-frequency analysis;Synchronization;Frequency estimation;Phased arrays;Wireless communication;Frequency synchronization;Radio frequency;Microwave antenna arrays;Estimation;Channel estimation;Clock synchronization;distributed antenna arrays;distributed collaborative beamforming;distributed phased arrays;phase calibration;two-way time transfer (TWTT);wireless sensor network;wireless synchronization},
+	doi={10.1109/TMTT.2025.3639461},
+	supp={2025_tmtt_wireless_coordination_appendix.pdf},
+	pdf={2025_tmtt_wireless_coordination.pdf}}
 
 @phdthesis{merlo2025dissertation,
 	abbr = {PhD Dissertation},
@@ -45,8 +63,6 @@
   keywords={Wireless communication;Phased arrays;Time-frequency analysis;Accuracy;Array signal processing;Wireless networks;Receiving antennas;Microwave antenna arrays;Topology;Synchronization;Consensus averaging;distributed antenna arrays;distributed beamforming;distributed collaborative beamforming;distributed phased arrays;synchronization;wireless networks},
   doi={10.1109/JMW.2025.3601036}}
 
-
-
 @inproceedings{merlo2025apsursi,
 	abbr = {IEEE AP-S/URSI},
 	abstract = {In recent years, a significant interest in wirelessly coordinated distributed antenna arrays has emerged due to their unique benefits they can provide to communication and remote sensing applications. Due to the distributed nature of these arrays, they are inherently scalable, allowing elements to join and leave the array in an ad-hoc manner, providing robustness to element failure, as well as the ability to be reconfigured during operation to provide more favorable beam patterns for a given frequency or mode of operation. While wirelessly coordinated distributed phased arrays (DPAs) will be an enabling technology, the challenge of efficient electrical state coordination of each array element remains open, requiring each element to be coordinated to a fraction of the carrier wavelength to ensure high levels of coherence to support beamforming. While fine coordination impairments may be corrected on the receive side a posteriori given sufficient computational power, transmit beamforming requires all elements' electrical states to be aligned prior to transmission to achieve coherent summation of transmitted waveforms in the desired directions, necessitating real-time wireless coordination. In this work we demonstrate the application of a fully digital wirelessly coordinated DPA for collaborative beamforming by building on previous work developing a computationally efficient fully digital wireless high-accuracy time synchronization technique (S. Prager, M. S. Haynes, and M. Moghaddam, IEEE Trans. Microw. Theory Tech.s, vol. 68, no. 11, pp. 4787--4804, 2020.; J. M. Merlo, S. R. Mghabghab, and J. A. Nanzer, IEEE Trans. Microw. Theory Tech., vol. 71, pp. 1720--1731, Dec. 2022.). While previous works have demonstrated beamforming using fully-wirelessly coordinated DPAs, they have relied on global navigation satellite system (GNSS)-based, or ad-hoc, continuous analog frequency references for frequency alignment. More recently, a fully digital coordination technique for DPAs was demonstrated using a pulsed single tone spectral estimation technique enabling decentralized frequency estimation (R. H. Kenney and J. W. McDaniel, 2024 IEEE/MTT-S IMS 2024, pp. 493--496, 2024.); however, this is the first demonstration known to the authors using a high-accuracy time-based technique to estimate and compensate for time, frequency, and phase offsets simultaneously at the carrier wavelength, without using direct spectral estimation, simplifying the estimation process, and eliminating the possibility of ambiguity when compared with carrier phase-based tracking techniques. Furthermore, due to the simplicity and efficiency of the algorithm, the entire process may be performed using off the shelf software-defined radios (SDRs) and all necessary processing is performed on commodity general purpose desktop processors without requiring acceleration using specialized graphics processing units (GPUs) or field-programmable gate arrays (FPGAs).},
@@ -58,16 +74,6 @@
 	pdf = {2025_ursi_abstract_digital_beamforming.pdf},
 	slides = {2025_aps_ursi_slides.pdf},
 	title = {All-Digital Wirelessly Coordinated Phased Array Collaborative Beamforming Using High Accuracy Time Synchronization},
-	year = {2025}}
-
-@article{merlo2025real,
-	abbr = {Preprint},
-	abstract = {This work presents a fully-digital high-accuracy real-time calibration procedure for frequency and time alignment of open-loop wirelessly coordinated coherent distributed antenna array (CDA) modems, enabling RF phase coherence of spatially separated commercial off-the-shelf (COTS) software-defined radios (SDRs) without any cables or external references such as global navigation satellite system (GNSS). Building on previous work using high-accuracy spectrally-sparse time of arrival (ToA) waveforms and a multi-step ToA refinement process, a high-accuracy two-way time transfer (TWTT)-based time-frequency coordination approach is demonstrated. By using a high-accuracy time estimation approach, frequency estimates can be derived over long observation intervals leading to a high-accuracy frequency estimate, without the requirement for long pulse durations as is required for direct spectral frequency estimation techniques, minimizing coordination overhead. Furthermore, due to the two-way nature of the high-accuracy TWTT approach, the time and frequency estimates are Doppler and multi-path tolerant, so long as the channel is reciprocal over the synchronization epoch. This technique is experimentally verified by demonstrating wireless distributed array coordination using COTS SDRs in a lab environment in static and dynamic scenarios and with significant multipath scatterers. Time, frequency, and phase stability were measured over coaxial cables to an oscilloscope and achieved time and phase coordination precision of ~60-70 ps, with median coherent gains above 99% using optimized parameters, and a beamforming frequency RMSE of 3.73 ppb in a dynamic scenario. Finally, experiments are conducted to compare the performance of this technique with previous work works using an analog continuous-wave two-tone (CWTT) frequency reference technique in both static and dynamic settings as a benchmark.},
-	arxiv = {2506.07267},
-	author = {Merlo, Jason M. and Wagner, Samuel and Lancaster, John and Nanzer, Jeffrey A.},
-	journal = {arXiv preprint arXiv:2506.07267},
-	bibtex_show={true},
-	title = {Real-Time High-Accuracy Digital Wireless Time, Frequency, and Phase Calibration For Coherent Distributed Antenna Arrays},
 	year = {2025}}
 
 @article{merlo2025collaborative,
