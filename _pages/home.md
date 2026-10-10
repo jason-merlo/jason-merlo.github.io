@@ -13,6 +13,6 @@ selected_papers: true
 latest_posts: false
 ---
 
-I am a researcher in the Distributed Electromagnetic Theory and Application ([DELTA](http://www.jeffreynanzer.org/)) sub-group of the Electromagnetics Research Group ([EMRG](https://www.egr.msu.edu/emrg/)) at Michigan State University. My current research interests include software-defined radios, distributed radar and wireless systems, synthetic aperture radar, joint radar-communications, and automotive radar applications.
+I am an assistant research professor in the Distributed Electromagnetic Theory and Application group ([DELTA](http://www.jeffreynanzer.org/)) and Electromagnetics Research Group ([EMRG](https://www.egr.msu.edu/emrg/)) at Michigan State University. My current research interests include software-defined radios, distributed radar and wireless systems, synthetic aperture radar (SAR), integrated sensing and communications (ISAC), automotive radar applications, and antenna measurement.
 
-Previously, I received a B.S. in Electrical Engineering at Michigan State University where I co-founded the Student Organized Autonomy Research group ([SOAR](https://canvas.msu.edu/avc0)) with the aim of enabling undergraduate and graduate students to become involved in autonomy research.
+Previously, I received a B.S. in computer engineering and a Ph.D. in electrical engineering from Michigan State University on the topic of [Wirelessly Coordinated Open-Loop Coherent Distributed Antenna Arrays Using Software-Defined Radio](https://doi.org/doi:10.25335/zv14-gf48). During my Ph.D. I studied coherent distributed antenna array coordination, interferometric radar signal procesing, and low-frequency automotive SAR. 
