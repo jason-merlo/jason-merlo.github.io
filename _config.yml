@@ -82,7 +82,7 @@ whatsapp_number: # your WhatsApp number (full phone number in international form
 medium_username: # your Medium username
 quora_username: # your Quora username
 # publons_id: GZ-3690-2022 # your ID on Publons
-# orcid_id: 0000-0002-8187-4724 # your ORCID ID
+orcid_id: 0000-0002-8187-4724 # your ORCID ID
 osf_id: # your OSF ID
 research_gate_profile: # your profile on ResearchGate
 scopus_id: # your profile on Scopus
